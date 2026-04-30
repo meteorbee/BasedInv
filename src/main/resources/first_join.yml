@@ -1,0 +1,71 @@
+# ============================================================
+#  StarterGear — First Join Configuration
+#  Applies once when a player joins the server for the first time.
+# ============================================================
+
+enabled: true
+
+# Clear the player's existing inventory before giving items?
+clear-inventory-first: false
+
+# ── Slot Reference ───────────────────────────────────────────
+# Hotbar   : 0–8
+# Main inv : 9–35
+# Boots    : 36  Leggings: 37  Chestplate: 38  Helmet: 39
+# Off-hand : 40
+# ─────────────────────────────────────────────────────────────
+
+items:
+  - slot: 0
+    material: FIREWORK_ROCKET
+    amount: 1
+    name: "&7Celebration!"
+    lore:
+      - "&8A Celebration for you starting out!"
+    enchantments:
+    unbreakable: false
+  - slot: 1
+    material: IRON_SWORD
+    amount: 1
+    name: "&7Starter Sword"
+    lore:
+      - "&8Given on first join"
+    enchantments:
+      SHARPNESS: 1
+    unbreakable: false
+
+  - slot: 2
+    material: COOKED_BEEF
+    amount: 16
+
+  - slot: 3
+    material: OAK_PLANKS
+    amount: 64
+
+  - slot: 4
+    material: WOODEN_PICKAXE
+    amount: 1
+
+  - slot: 39
+    material: LEATHER_HELMET
+    amount: 1
+    color: "255,100,0"
+
+  - slot: 38
+    material: LEATHER_CHESTPLATE
+    amount: 1
+    color: "255,100,0"
+
+  - slot: 37
+    material: LEATHER_LEGGINGS
+    amount: 1
+    color: "255,100,0"
+
+  - slot: 36
+    material: LEATHER_BOOTS
+    amount: 1
+    color: "255,100,0"
+
+# Commands run as CONSOLE on first join. {player} = player name.
+on-join-commands:
+  - "say Welcome {player} to the server!"

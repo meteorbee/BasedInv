@@ -1,0 +1,17 @@
+name: BasedInv
+version: '1.0'
+main: dev.meteorbee.basedInv.BasedInv
+api-version: '1.21'
+description: Configure first-join and respawn inventories via YAML configs
+
+commands:
+  basedinv:
+    description: BasedInv admin commands
+    aliases: [bi]
+    usage: /basedinv reload
+    permission: basedinv.admin
+
+permissions:
+  basedinv.admin:
+    description: Access to BasedInv admin commands
+    default: op
